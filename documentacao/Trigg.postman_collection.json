@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "b4709714-8f30-4dfc-9e28-5fc2f2013cd3",
+		"name": "Trigg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Candidatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/candidatos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidatos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidato",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/candidatos/8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidatos",
+						"8888"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
