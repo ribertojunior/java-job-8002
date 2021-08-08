@@ -39,7 +39,7 @@ public class JavaJob8002Application {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         ObjectMapper mapper = new ObjectMapper();
         mapper.setDateFormat(dateFormat);
-        Entity entity = mapper.readValue(candidatos.getFile(), Entity.class);
+        Entity entity = mapper.readValue(candidatos.getInputStream(), Entity.class);
         // LinkedList<Candidato> bubble = Util.bubble(entity.getCandidatos());
         repository.saveAll(entity.getCandidatos());
       }
